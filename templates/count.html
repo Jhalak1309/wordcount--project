@@ -1,0 +1,18 @@
+<h1> There are {{wordscount}} words in the text </h1>
+
+<a href="{% url 'homeurl' %}"> Start Again </a>
+
+<h1> Your text : </h1>
+{{ fulltextkey }}
+
+
+<h1> Word count </h1>
+
+
+{% for wordvar, countvar in worddictonary %}
+
+{{wordvar}} - {{countvar}}
+<br />
+
+
+{% endfor %}
